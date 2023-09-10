@@ -20,8 +20,9 @@ function handleSubmit(event) {
     email: email.value,
     password: password.value,
   };
-  if (info.email === '' || info.password == '') {
+  if (info.email === '' || info.password === '') {
     alert('Всі поля повинні бути заповнені');
+    return;
   } else {
     console.log(info);
   }
